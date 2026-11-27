@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fragengine"
+version = "1.0.0"
+description = "Desktop Valorant kill-feed clip detector"
+requires-python = ">=3.10"
+dependencies = ["PySide6", "opencv-python", "numpy", "Pillow", "ffmpeg-python", "av>=15", "yt-dlp[default]"]
+
+[project.scripts]
+fragengine = "fragengine.gui.app:main"
+fragengine-calibrate = "fragengine.gui.calibration:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+
+[tool.setuptools.package-data]
+"fragengine.gui" = ["*.svg"]

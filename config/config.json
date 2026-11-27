@@ -1,0 +1,40 @@
+{
+  "source_resolution": {
+    "width": 1920,
+    "height": 1080
+  },
+  "kill_feed_crop": {
+    "x": 1450,
+    "y": 95,
+    "width": 300,
+    "height": 230
+  },
+  "sampling": {
+    "fps": "2/3"
+  },
+  "download": {
+    "height": 1080,
+    "segment_seconds": 60
+  },
+  "ffmpeg": {
+    "hwaccel": "cuda"
+  },
+  "encoding": {
+    "video": "copy",
+    "audio": "copy"
+  },
+  "templates_dir": "assets/templates",
+  "detection": {
+    "threshold": 0.75,
+    "temporal_window_seconds": 3.0,
+    "min_observations": 1
+  },
+  "editorial": {
+    "grouping_seconds": 10,
+    "clip_before_seconds": 10,
+    "clip_after_seconds": 10
+  },
+  "template_settings": {
+    "disabled": []
+  }
+}

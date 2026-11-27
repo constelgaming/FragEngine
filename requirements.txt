@@ -1,0 +1,8 @@
+PySide6
+opencv-python
+numpy
+Pillow
+ffmpeg-python
+av>=15
+yt-dlp[default]
+

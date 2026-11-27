@@ -1,0 +1,47 @@
+# Python environment and build output
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Personal name templates (create your own in the calibration window)
+assets/templates/*
+!assets/templates/README.md
+
+# Run output, calibration previews, clips, logs
+output/
+*.log
+detection_log.json
+
+# Config backups written on every save
+config/*.bak
+config.json.bak
+
+# Media and temp buffers
+*.mp4
+*.mkv
+*.mov
+*.webm
+*.part
+*.ytdl
+tmp/
+temp/
+
+# Secrets
+.env
+.env.*
+
+# Editor / OS clutter
+.vscode/
+.idea/
+.claude/
+Thumbs.db
+Desktop.ini
+.DS_Store
